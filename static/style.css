@@ -27,7 +27,12 @@ a:active {
     background-color: transparent;
 }
 
+p {
+    font-weight: 300;
+}
+
 /* Barras de navegação */
+/*
 #profile {
     position: fixed;
     top: 0;
@@ -74,7 +79,7 @@ a:active {
 #profile .social-media a {
     padding: 0.3rem;
 }
-
+*/
 #header {
     position: absolute;
     right: 0;
@@ -84,9 +89,11 @@ a:active {
 }
 
 /* Configurações main*/
+/*
 #main {
     margin-left: 300px;
 }
+*/
 
 /* Seção Início */
 section#inicio {
@@ -106,10 +113,17 @@ section#inicio span#subtitle {
     font-size: 1rem;
 }
 
-section#inicio div#more a {
+header#header a,
+section#inicio, 
+section#inicio a {
+    color:#b6daf0;
+}
+
+header#header a:hover {
     color:#ffffff;
 }
 
-section#inicio div#more :hover {
-    color:#b6daf0;
+header#header a:active,
+section#inicio a:active {
+    color:#00008b;
 }
