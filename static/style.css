@@ -8,7 +8,22 @@ body {
     font-family: 'Merriweather Sans', Arial, Helvetica, sans-serif;
 }
 
-a {
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    width: 12px;
+    box-shadow: inset 0 0 1rem #00000050;
+    background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #029af8;
+}
+
+a, 
+.title-section {
     text-decoration: none;
     color: #029af8;
     text-shadow: 0.3px 0.3px #000000;
@@ -61,24 +76,6 @@ p {
     font-weight: 600;
     text-align: center;
 }
-
-#profile .social-media {
-    display: flex;
-    justify-content: center;
-}
-
-#profile .social-media i{
-    font-size: 1.5rem;
-}
-
-#profile .social-media .ai-lattes {
-    font-size: 1.8rem;
-    margin-top: 3px;
-}
-
-#profile .social-media a {
-    padding: 0.3rem;
-}
 */
 #header {
     position: absolute;
@@ -126,4 +123,23 @@ header#header a:hover {
 header#header a:active,
 section#inicio a:active {
     color:#00008b;
+}
+
+/* Seção Sobre */
+#sobre .social-media {
+    display: flex;
+    justify-content: center;
+}
+
+#sobre .social-media i{
+    font-size: 1.5rem;
+}
+
+#sobre .social-media .ai-lattes {
+    font-size: 1.8rem;
+    margin-top: 3px;
+}
+
+#sobre .social-media a {
+    padding: 0.3rem;
 }
