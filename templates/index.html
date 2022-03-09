@@ -15,14 +15,11 @@
 
 <body>
     <!--
-        <aside id="profile">
+    <aside id="profile">
         <section class="align-middle">
             <img id="profile-img" src="../static/img/perfil.jpg" alt="Lorena">
             <h1 id="title-name">Lorena Rocha</h1>
             <article class="social-media">
-                <a href="#" target="_blank">
-                    <i class="bi bi-app"></i>
-                </a>
                 <a href="https://github.com/lorenarocha" target="_blank">
                     <i class="bi bi-github"></i>
                 </a>
@@ -32,15 +29,13 @@
                 <a href="http://lattes.cnpq.br/6687918107723683" target="_blank">
                     <i class="ai ai-lattes"></i>
                 </a>
+                <a href="mailto:lore.bezerra.r@gmail.com" target="_blank">
+                    <i class="bi bi-envelope"></i>
+                </a>
             </article>
         </section>
-
-    </aside>
-    -->
-
-    <header id="header">
-        <nav id="nav" class="nav-menu mt-2">
-            <ul class="nav justify-content-end ">
+    <nav id='navbar' class="nav-menu">
+            <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                 </li>
@@ -48,7 +43,33 @@
                     <a class="nav-link" href="#sobre">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Habilidades</a>
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#curriculo">Currículo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfólio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+-->
+
+    <header id="header">
+        <nav id="nav" class="nav-menu mt-2">
+            <ul class="nav justify-content-end ">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#start">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#habilities">Habilidades</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Currículo</a>
@@ -64,7 +85,7 @@
     </header>
 
     <main id="main">
-        <section id="inicio" class="row m-0 p-0">
+        <section id="start" class="row m-0 p-0">
             <div class="col-md-5 d-flex justify-content-center align-items-center flex-column">
                 <h2 class="display-2 display-name">Lorena Rocha</h2>
                 <span id="subtitle" class="display-title">Cientista de Dados e Meterologista</span>
@@ -76,9 +97,9 @@
                 </div>
             </div>
         </section>
-        <section id="sobre" class="container mt-5">
+        <section id="about" class="container mt-5">
             <div class="row w-100">
-                <div class="col-md-12">
+                <article class="col-md-12">
                     <h2 class="pt-3 title-section">Sobre</h2>
                     <p>Meteorologista pela Universidade Federal de Itajubá (Unifei) e atualmente, faço Mestrado pelo
                         Programa de Pós-Graduação em Meteorologia pela Universidade de São Paulo (USP). Na área
@@ -90,8 +111,8 @@
                         através do Python. Sou uma pessoa que preza muito pelo aprendizado, então estou sempre
                         descobrindo coisas novas que contribuam na minha jornada.
                     </p>
-                </div>
-                <div class="row mt-4">
+                </article>
+                <article class="row mt-4">
                     <div class="col-md-4">
                         <img class="img-fluid shadow" src="../static/img/perfil.jpg" alt="Lorena Rocha">
                     </div>
@@ -148,10 +169,78 @@
                             </article>
                         </div>
 
-                        <p>Além desse trabalho... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, fugit consequuntur id earum eius iure ex possimus velit et odio ut asperiores, officia distinctio? Et ex facere cumque amet. Qui. Aspernatur laudantium placeat at temporibus autem fugiat nam, quam perspiciatis facere possimus corporis.</p>
+                        <p></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="habilities" class="mt-5 section-bg">
+            <article class="container p-5">
+                <h2 class="pt-3 title-section">Habilidades</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime blanditiis ipsam minima itaque qui quasi, optio obcaecati fugiat asperiores consequatur quod quis perspiciatis facere? Omnis unde laboriosam amet quisquam!
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0">Python</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                        <p class="mt-3 mb-0">SQL Oracle</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                        <p class="mt-3 mb-0">Shell Script</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0">R</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                        <p class="mt-3 mb-0">Fortran</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                        <p class="mt-3 mb-0">GrADS</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <hr class="w-50 me-auto ms-auto">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0">Python</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                        <p class="mt-3 mb-0">SQL Oracle</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                        <p class="mt-3 mb-0">Shell Script</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0">R</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                        <p class="mt-3 mb-0">Fortran</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                        <p class="mt-3 mb-0">GrADS</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
 
