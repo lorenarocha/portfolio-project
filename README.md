@@ -16,7 +16,7 @@ Criação de um portifólio e aprendizado com a framework Flask.
 
 | <img src="https://unavatar.now.sh/github/lorenarocha" alt="Gabriel" width="200px" /> | <img src="https://unavatar.now.sh/github/marlenemoraes" alt="Marlene" width="200px"/> | 
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Lorena Rocha <br/>(@lorenarocha)                     | Marlene Moraes<br/> (@MarleneMoraes)                         | 
+| Lorena Rocha (backend) <br/>@lorenarocha                   | Marlene Moraes (frontend)<br/> (@MarleneMoraes)                         | 
 
 > Status do projeto: Em Andamento :pencil:
 
