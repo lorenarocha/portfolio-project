@@ -152,4 +152,29 @@ section#start a:active {
     padding: 0.3rem;
 }
 
-/* Seção Habilidades */
+/* Seção Currículo */
+.curriculum .curriculum-title {
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--secondary);
+}
+
+.curriculum .curriculum-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid var(--secondary);
+    position: relative;
+}
+
+.curriculum .curriculum-item::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--secondary);
+    border-radius: 50%;
+    background: var(--light);
+}
