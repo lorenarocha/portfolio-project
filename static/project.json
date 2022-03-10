@@ -11,19 +11,19 @@
             "name": "Case técnico para a vaga Data Catalog Analyst na Cornershop by Uber",
             "link": "https://github.com/lorenarocha/cornershop-by-uber-sql-test",
             "description": "A partir de datasets providos pela empresa, foi possível calcular métricas utilizadas na operação do time. Um modelo relacional foi criado e a partir disso, as métricas foram calculadas por queries do SQL e após isso, foi feita a visualização desses indicadores no Tableau e escrita de um Management Report.",
-            "thumb": "/static/img/cornershop-teste.png"
+            "thumb": "static/img/cornershop-test.png"
         },
         {
             "name": "Análise Exploratória dos shows da Netflix",
             "link": "https://github.com/lorenarocha/netflix-shows-eda",
             "description": "Com o intuito de aprender técnicas da análise exploratória e também visualização de dados no Python, esse projeto é objeto de estudo para a carreira de Data Analytics.",
-            "thumb": "/static/img/netflix-analysis.png"
+            "thumb": "static/img/netflix-analysis.jpg"
         },
         {
             "name": "Portfolio Responsivo com Flask e Bootstrap",
             "link": "https://github.com/lorenarocha/portfolio-project",
             "description": "Projeto realizado em pair programming com Marlene Moraes, em que eu fiquei responsável pela parte do backend para aprendizado do framework Flask.",
-            "thumb": "/static/img/teste.png"
+            "thumb": "static/img/flask.png"
         }
         
     ]
