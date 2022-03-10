@@ -23,27 +23,31 @@ body {
 *::-webkit-scrollbar-track {
     width: 12px;
     box-shadow: inset 0 0 1rem #00000050;
-    background-color: #ffffff;
+    background-color: var(--light);
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #029af8;
+    background-color: var(--primary);
+}
+
+a{
+    text-decoration: none;
 }
 
 a, 
 .title-section {
-    text-decoration: none;
-    color: #029af8;
-    text-shadow: 0.3px 0.3px #000000;
+    color: var(--primary);
+    text-shadow: 0.3px 0.3px var(--dark);
     transition: 0.3s;
 }
 
-a:hover {
-    color: #00008b;
+a:hover,
+.nav-menu:hover {
+    color: var(--secondary);
 }
 
 a:active {
-    color: #ffffff;
+    color: var(--light);
 }
 
 p {
@@ -54,19 +58,32 @@ p {
     background-color: var(--quaternary);
 }
 
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media i{
+    font-size: 1.5rem;
+}
+
+.social-media .ai-lattes {
+    font-size: 1.8rem;
+    margin-top: 3px;
+}
+
+.social-media a {
+    padding: 0.3rem;
+}
+
 /* Barras de navegação */
-/*
-#profile {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background-color: #b6daf0;
-    overflow-y: auto;
-    width: 300px;
-    transition: all ease-in-out 0.5s;
-    padding: 0 15px;
-    z-index: 9997;
+#offcanvasNavbar{
+    background-color: var(--tertiary);
+}
+
+.bi-list {
+    font-size: 50px;
+    color: var(--tertiary);
 }
 
 #profile-img {
@@ -74,31 +91,19 @@ p {
     display: block;
     width: 150px;
     border-radius: 50%;
-    box-shadow: 1px 1px 0.4em #000000;
+    box-shadow: 1px 1px 0.4em var(--dark);
+}
+.nav-link,
+#title-name {
+    color: var(--primary);
 }
 
 #title-name {
     font-size: 2rem;
-    color: #029af8;
-    text-shadow: 0.5px 0.5px #000000;
+    text-shadow: 0.5px 0.5px var(--dark);
     font-weight: 600;
     text-align: center;
 }
-*/
-#header {
-    position: absolute;
-    right: 0;
-    background-color: transparent;
-    overflow-x: auto;
-    z-index: 9996;
-}
-
-/* Configurações main*/
-/*
-#main {
-    margin-left: 300px;
-}
-*/
 
 /* Seção Início */
 section#start {
@@ -110,7 +115,7 @@ section#start {
 
     width: 100%;
     height: 100vh;
-    text-shadow: 4px 4px 10px #000000;
+    text-shadow: 4px 4px 10px var(--dark);
 }
 
 section#start span#subtitle {
@@ -118,39 +123,31 @@ section#start span#subtitle {
     font-size: 1rem;
 }
 
-header#header a,
 section#start, 
 section#start a {
-    color:#b6daf0;
+    color: var(--tertiary);
 }
 
-header#header a:hover {
-    color:#ffffff;
-}
-
-header#header a:active,
 section#start a:active {
-    color:#00008b;
+    color: var(--secondary);
 }
 
-/* Seção Sobre */
-#about .social-media {
-    display: flex;
-    justify-content: center;
+
+/* Seção Habilidades */
+.row {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.card-habilities{
+    background-color: transparent;
+    margin-top: 10px;
 }
 
-#about .social-media i{
-    font-size: 1.5rem;
+.card-body img,
+.card-body svg {
+    width: 150px;
 }
 
-#about .social-media .ai-lattes {
-    font-size: 1.8rem;
-    margin-top: 3px;
-}
-
-#about .social-media a {
-    padding: 0.3rem;
-}
 
 /* Seção Currículo */
 .curriculum .curriculum-title {
@@ -178,3 +175,5 @@ section#start a:active {
     border-radius: 50%;
     background: var(--light);
 }
+
+/* Seção Portifólio */
