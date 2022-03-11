@@ -10,17 +10,16 @@ app.secret_key = 'lorena'
 app.config['FILE_PATH'] = os.path.dirname(os.path.realpath(__file__)) + '/static'
 file_path = app.config['FILE_PATH']
 
-mail_settings = {
-    'MAIL_SERVER': 'smtp.gmail.com',
-    'MAIL_PORT': 405,
-    'MAIL_USE_TLS': False,
-    'MAIL_USE_SSL': True,
-    'MAIL_USERNAME':email,
-    'MAIL_PASSWORD': senha
-}
+mail_settings = {"MAIL_SERVER": 'smtp.gmail.com',
+                 "MAIL_PORT": 465,
+                 "MAIL_USE_TLS": False,
+                 "MAIL_USE_SSL": True,
+                 "MAIL_USERNAME": email,
+                 "MAIL_PASSWORD": senha}
 
 app.config.update(mail_settings)
 mail = Mail(app)
+
 
 @app.route('/')
 def index():
@@ -35,28 +34,26 @@ def index():
                            projects=data)
     
 
-@app.route('/send', methods=['GET','POST'])
+@app.route('/send', methods=['POST',])
 def send():
     if request.method == 'POST':
-        formContato = Contato(
-            request.form['name'],
-            request.form['email'],
-            request.form['message']
-        )
-
+        formContato = Contato(request.form['name'], 
+                            request.form['email'], 
+                            request.form['message'])
+        
         msg = Message(
             subject = f'{formContato.nome} te enviou uma mensagem no portfólio',
             sender = app.config.get("MAIL_USERNAME"),
             recipients= ['lore.bezerra.r@gmail.com'],
             body = f'''
-            
-            {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte mensagem:
+                
+            {formContato.nome} com o e-mail {formContato.email} te enviou a seguinte mensagem:
             {formContato.mensagem}
-            '''
-        )
+            ''')
+        
         mail.send(msg)
         flash('Mensagem enviada com sucesso!')
-    return redirect('/')
+        return redirect(url_for('index'))
          
 
 if __name__ == '__main__':
