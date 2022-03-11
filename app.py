@@ -1,23 +1,11 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
 from flask_mail import Mail, Message
-from config import email, senha, get_json, Contato
+from helpers import get_json, Contato
 import datetime
-import os
+
 
 app = Flask(__name__)
-app.secret_key = 'lorena'
-
-app.config['FILE_PATH'] = os.path.dirname(os.path.realpath(__file__)) + '/static'
-file_path = app.config['FILE_PATH']
-
-mail_settings = {"MAIL_SERVER": 'smtp.gmail.com',
-                 "MAIL_PORT": 465,
-                 "MAIL_USE_TLS": False,
-                 "MAIL_USE_SSL": True,
-                 "MAIL_USERNAME": email,
-                 "MAIL_PASSWORD": senha}
-
-app.config.update(mail_settings)
+app.config.from_pyfile('config.py')
 mail = Mail(app)
 
 
@@ -27,7 +15,7 @@ def index():
     aniversario = birthday.strftime('%d/%m')
     idade = int(((datetime.date.today() - \
                       birthday).days) / 365)
-    data = get_json('project.json', file_path)['projects']
+    data = get_json('project.json', app.config['FILE_PATH'])['projects']
     return render_template('index.html',
                            aniversario=aniversario, 
                            idade=idade,
@@ -43,7 +31,7 @@ def send():
         
         msg = Message(
             subject = f'{formContato.nome} te enviou uma mensagem no portfólio',
-            sender = app.config.get("MAIL_USERNAME"),
+            sender = app.config['MAIL_USERNAME'],
             recipients= ['lore.bezerra.r@gmail.com'],
             body = f'''
                 

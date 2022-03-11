@@ -1,29 +1,13 @@
-import json
+import os
+from contact import email, senha
 
-email = 'jzdhisjd@gmail.com'
-senha = 'email110419'
+SECRET_KEY = 'lorena'
 
-def get_json(file, path):
-    with open(f'{path}/{file}', 'r') as f:
-        data = json.load(f)
-    return data
+FILE_PATH = os.path.dirname(os.path.realpath(__file__)) + '/static'
 
-
-class Contato:
-    def __init__(self, nome, email, mensagem):
-        self.__nome = nome
-        self.__email = email
-        self.__mensagem = mensagem
-        
-    @property
-    def nome(self):
-        return self.__nome
-    
-    @property
-    def email(self):
-        return self.__email
-    
-    @property
-    def mensagem(self):
-        return self.__mensagem
-
+MAIL_SERVER = 'smtp.gmail.com'
+MAIL_PORT = 465
+MAIL_USE_TLS = False
+MAIL_USE_SSL = True
+MAIL_USERNAME = email
+MAIL_PASSWORD = senha
