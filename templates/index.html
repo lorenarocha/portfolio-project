@@ -281,32 +281,33 @@
         <section id="portfolio" class="mt-5 section-bg">
             <article class="container p-5">
                 <h2 class="pt-3 title-section">Portfólio</h2>
-                <div class="row">
-                    
                     <div id="carouselPortfolio" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="2"
+                                class="active" aria-current="true" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="10000">
-                                <div class="row row-cols-1 row-cols-md-3 g-4">
-                                    <div class="col">
-                                        {% for project in projects %}
-                                        <div class="card">
-                                            <img src="{{ project.thumb }}" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">{{ project.name }}</h5>
-                                                <p class="card-text">{{ project.description }}</p>
-                                                <button type="button" class="btn btn-outline-primary github-link"><a
-                                                        href="{{ project.link }}">GitHub</a></button>
-                                            </div>
+                            {% for project in projects %}
+                            <div class="carousel-item {% if loop.index == 1 %} active {% endif %}" id="slide{{ loop.index }}">
+                                <div class="row row-cols-1 row-cols-md-4 g-4"> 
+                                    <div class="card">
+                                        <img src="{{ project.thumb }}" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{ project.name }}</h5>
+                                            <p class="card-text">{{ project.description }}</p>
+                                            <button type="button" class="btn btn-outline-primary github-link">
+                                                <a href="{{ project.link }}">GitHub</a></button>
                                         </div>
-                                        {% endfor %}
                                     </div>
+                                </div>
                             </div>
+                            {% endfor %}
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio"
                             data-bs-slide="prev">
@@ -319,7 +320,6 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-
             </article>
         </section>
         <section id="contact" class="mt-5 curriculum">
