@@ -20,3 +20,9 @@ animeScroll();
 window.addEventListener("scroll", () => {
     animeScroll();
 })
+
+// Tira a mensagem de sucesso depois de 5 segundos
+
+setTimeout(() => {
+    document.querySelector('#alert').style.display = 'none';
+}, 5000)

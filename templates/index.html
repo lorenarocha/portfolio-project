@@ -330,7 +330,7 @@
                                 aria-label="Slide 2"></button>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="carousel-item active" data-bs-interval="5000">
                                 <div class="row row-cols-1 row-cols-md-3 g-4">
                                     {% for i in range(0, 3) %}
                                     <div class="col">
@@ -348,7 +348,7 @@
                                     {% endfor %}
                                 </div>
                             </div>
-                            <div class="carousel-item" data-bs-interval="2000">
+                            <div class="carousel-item" data-bs-interval="5000">
                                 <div class="row row-cols-1 row-cols-md-3 g-4">
                                     {% for i in range(3, 6) %}
                                     <div class="col">
@@ -423,10 +423,8 @@
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         {% for message in messages %}
-
-        <div id="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+        <div id="alert" class="alert alert-success" role="alert">
             <i class="bi bi-envelope-check-fill"></i> {{ message }}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         {% endfor %}
         {% endif %}

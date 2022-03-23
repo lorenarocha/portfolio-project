@@ -22,7 +22,7 @@
         {
             "name": "Portfolio Responsivo com Flask e Bootstrap",
             "link": "https://github.com/lorenarocha/portfolio-project",
-            "description": "Projeto realizado em pair programming com Marlene Moraes, em que fiquei responsável pela parte do backend, utilizando o framework Flask. (Em andamento)",
+            "description": "Projeto realizado em pair programming com Marlene Moraes. Desenvolvi o backend do Portfolio, utilizando o framework Flask, criando várias rotas. (Em andamento)",
             "thumb": "static/img/flask.png"
         },
         {
@@ -33,7 +33,7 @@
         },
         {
             "name": "Estimativa de precipitação por satélite",
-            "link": "",
+            "link": "https://github.com/lorenarocha/hidroestimador-unifei",
             "description": "Elaboração de um produto de Hidroestimador contextualizado para a região de Itajubá. Para a criação do produto, foi utilizado Shell Script, Python, GrADS e CDO.",
             "thumb": "static/img/hidroestimador.png"
         }
