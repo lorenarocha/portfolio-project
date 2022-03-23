@@ -1,5 +1,7 @@
 import os
-from contact import email, senha
+from dotenv import load_dotenv
+
+load_dotenv()
 
 SECRET_KEY = 'lorena'
 
@@ -10,5 +12,5 @@ MAIL_SERVER = 'smtp.gmail.com'
 MAIL_PORT = 465
 MAIL_USE_TLS = False
 MAIL_USE_SSL = True
-MAIL_USERNAME = email
-MAIL_PASSWORD = senha
+MAIL_USERNAME = os.getenv('EMAIL')
+MAIL_PASSWORD = os.getenv('SENHA')
