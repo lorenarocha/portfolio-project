@@ -79,7 +79,7 @@ p {
 
 /* Barras de navegação */
 #offcanvasNavbar{
-    background-color: var(--tertiary);
+    background-color: var(--light);
 }
 
 .bi-list {
