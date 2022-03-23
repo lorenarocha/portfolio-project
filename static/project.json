@@ -5,7 +5,7 @@
             "name": "Análise dos dados de COVID-19",
             "link": "https://github.com/lorenarocha/owid-covid-analysis",
             "description": "Criação de queries no SQL a partir dos dados de COVID-19 da Our World in Data e com as análises feitas, um dashboard foi produzido no Tableau.",
-            "thumb": "/static/img/covid-analysis.png"
+            "thumb": "static/img/covid-analysis.png"
         },
         {
             "name": "Case técnico para a vaga Data Catalog Analyst na Cornershop by Uber",
@@ -22,8 +22,14 @@
         {
             "name": "Portfolio Responsivo com Flask e Bootstrap",
             "link": "https://github.com/lorenarocha/portfolio-project",
-            "description": "Projeto realizado em pair programming com Marlene Moraes, em que fiquei responsável pela parte do backend, utilizando o framework Flask.",
+            "description": "Projeto realizado em pair programming com Marlene Moraes, em que fiquei responsável pela parte do backend, utilizando o framework Flask. (Em andamento)",
             "thumb": "static/img/flask.png"
+        },
+        {
+            "name": "CRUD com dados do Letterboxd",
+            "link": "https://github.com/lorenarocha/crud-letterboxd",
+            "description": "Criação de banco de dados de um perfil do Letterboxd no MySQL com o pacote SQLAlchemy , processo de CRUD e visualização dos dados no Streamlit. (Em andamento)",
+            "thumb": ""
         }
         
     ]
