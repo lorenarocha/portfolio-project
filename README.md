@@ -16,9 +16,9 @@ Criação de um portifólio e aprendizado com a framework Flask.
 - [x] Criação do servidor
 - [x] Seção de e-mail com Flask
 - [x] Front com HTML e Bootstrap 
-- [ ] Animação com JS
+- [x] Animação com JS
 - [x] Utilização de um dicionário JSON para criar o carrossel de projetos
-- [ ] Rota para adicionar projetos ao portfolio
+- [x] Rota para adicionar projetos ao portfolio
 - [ ] Seção de dashboards
 - [ ] openweather API
 
