@@ -15,7 +15,7 @@ def index():
     aniversario = birthday.strftime('%d/%m')
     idade = int(((datetime.date.today() - \
                       birthday).days) / 365)
-    data = get_json('project.json', app.config['FILE_PATH'])['projects']
+    data = get_json('projects.json', app.config['PROJECTS_PATH'])['projects']
     return render_template('index.html',
                            aniversario=aniversario, 
                            idade=idade,
@@ -43,10 +43,10 @@ def send():
         flash('Mensagem enviada com sucesso!')
         return redirect(url_for('index'))
     
-@app.route('/download')
-def download():
-    cv = 'static/Lorena_CV_DataAnalyst.pdf'
-    return send_file(cv, as_attachment=True)
+@app.route('/curriculum-vitae')
+def get_cv():
+    cv = app.config['CV_PATH'] + '/Lorena_CV_DataAnalyst.pdf'
+    return send_file(cv)
          
 
 if __name__ == '__main__':
