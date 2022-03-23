@@ -28,14 +28,14 @@
         {
             "name": "CRUD com dados do Letterboxd",
             "link": "https://github.com/lorenarocha/crud-letterboxd",
-            "description": "Criação de banco de dados de um perfil do Letterboxd no MySQL com o pacote SQLAlchemy , processo de CRUD e visualização dos dados no Streamlit. (Em andamento)",
-            "thumb": ""
+            "description": "Criação de banco de dados de um perfil do Letterboxd no MySQL com o pacote SQLAlchemy, processo de CRUD e visualização dos dados com o framework Streamlit. (Em andamento)",
+            "thumb": "static/img/letterboxd-logo.png"
         },
         {
             "name": "Estimativa de precipitação por satélite",
             "link": "",
-            "description": "Elaboração de um produto de Hidroestimador contextualizado para a região de Itajubá. Para a criação do produto, foi utilizado Shell Script, Python, GrADS e CDO. A operação está disponível em https://meteorologia.unifei.edu.br.",
-            "thumb": ""
+            "description": "Elaboração de um produto de Hidroestimador contextualizado para a região de Itajubá. Para a criação do produto, foi utilizado Shell Script, Python, GrADS e CDO.",
+            "thumb": "static/img/hidroestimador.png"
         }
         
     ]
