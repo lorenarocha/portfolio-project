@@ -4,13 +4,13 @@
         {
             "name": "Análise dos dados de COVID-19",
             "link": "https://github.com/lorenarocha/owid-covid-analysis",
-            "description": "Criação de queries no SQL a partir dos dados de COVID-19 da Our World in Data e com as análises feitas, um dashboard foi produzido no Tableau.",
-            "thumb": "static/img/covid-analysis.png"
+            "description": "Criação de queries no SQL a partir dos dados de COVID-19 da Our World in Data com análises feitas como: taxa de morte pela doença, número de casos e vacinação, além da criação de um dashboard no Tableau.",
+            "thumb": "static/img/covid-19-variants.jpg"
         },
         {
-            "name": "Case técnico para a vaga Data Catalog Analyst na Cornershop by Uber",
+            "name": "Case técnico para a vaga Data Catalog Analyst",
             "link": "",
-            "description": "A partir de datasets providos pela empresa, foi possível calcular métricas utilizadas na operação do time. Um modelo relacional foi criado e a partir disso, as métricas foram calculadas por queries do SQL e após isso, foi feita a visualização desses indicadores no Tableau e escrita de um Management Report.",
+            "description": "Cálculo de indicadores usados na operação da empresa, criação de queries no SQL, visualização dos dados no Tableau e escrita de Management Report.",
             "thumb": "static/img/uber_cornershop_fotoarte.jpg"
         },
         {
@@ -29,6 +29,12 @@
             "name": "CRUD com dados do Letterboxd",
             "link": "https://github.com/lorenarocha/crud-letterboxd",
             "description": "Criação de banco de dados de um perfil do Letterboxd no MySQL com o pacote SQLAlchemy , processo de CRUD e visualização dos dados no Streamlit. (Em andamento)",
+            "thumb": ""
+        },
+        {
+            "name": "Estimativa de precipitação por satélite",
+            "link": "",
+            "description": "Elaboração de um produto de Hidroestimador contextualizado para a região de Itajubá. Para a criação do produto, foi utilizado Shell Script, Python, GrADS e CDO. A operação está disponível em https://meteorologia.unifei.edu.br.",
             "thumb": ""
         }
         

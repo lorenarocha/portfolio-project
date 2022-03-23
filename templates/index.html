@@ -228,7 +228,7 @@
                                     <p class="card-subtitle mb-2 text-muted">Python</p>
                                 </div>
                                 <div class="card card-habilities">
-                                <div class="card-body">
+                                    <div class="card-body">
                                         <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <title>Oracle</title>
                                             <path
@@ -315,8 +315,7 @@
                     </div>
                 </div>
                 <button type="button" class="btn btn-outline-primary cv-link">
-                    <a href="{{ url_for('get_cv') }}"
-                        target="_blank">Download CV</a></button>
+                    <a href="{{ url_for('get_cv') }}" target="_blank">Download CV</a></button>
             </article>
         </section>
         <section id="portfolio" class="mt-5 section-bg">
@@ -351,7 +350,7 @@
                             </div>
                             <div class="carousel-item" data-bs-interval="2000">
                                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                                    {% for i in range(3, 5) %}
+                                    {% for i in range(3, 6) %}
                                     <div class="col">
                                         <div class="card card-portfolio">
                                             <img src="{{ projects[i]['thumb'] }}" class="card-img-top">
@@ -420,6 +419,19 @@
                 </div>
             </article>
         </section>
+
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+
+        <div id="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-envelope-check-fill"></i> {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
     </main>
 
     <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js') }}"></script>
