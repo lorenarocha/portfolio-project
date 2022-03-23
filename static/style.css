@@ -205,6 +205,19 @@ section#start a:active {
     right: 30px;
 }
 
+/* Footer */
+#footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    background-color: var(--secondary);
+    color: var(--light);
+    width: auto;
+    z-index: 99999;
+    padding: 20px 15px;
+    transition: .3s;
+}
+
 /* Animação */
 [data-anime] {
     opacity: 0;
