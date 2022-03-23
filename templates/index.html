@@ -286,14 +286,6 @@
                             <p>- Elaboração da previsão de tempo diária, particularmente, para a região Nordeste</p>
                             <p>- Comunicação e atendimento a usuários da informação meteorológica.</p>
                         </div>
-                        <!--
-                        <div class="curriculum-item">
-                            <h4></h4>
-                            <h5></h5>
-                            <p><em></em></p>
-                            <p></p>
-                        </div>
-                    -->
                     </div>
                 </div>
             </article>
@@ -315,7 +307,7 @@
                                     {% for i in range(0, 3) %}
                                     <div class="col">
                                         <div class="card">
-                                            <img src="{{ projects[i]['thumb'] }}" class="card-img-top" alt="...">
+                                            <img src="{{ projects[i]['thumb'] }}" class="card-img-top">
                                             <div class="card-body">
                                                 <h5 class="card-title">{{ projects[i]['name'] }}</h5>
                                                 <p class="card-text">{{ projects[i]['description'] }}</p>
@@ -332,7 +324,7 @@
                                     {% for i in range(3, 5) %}
                                     <div class="col">
                                         <div class="card">
-                                            <img src="{{ projects[i]['thumb'] }}" class="card-img-top" alt="...">
+                                            <img src="{{ projects[i]['thumb'] }}" class="card-img-top">
                                             <div class="card-body">
                                                 <h5 class="card-title">{{ projects[i]['name'] }}</h5>
                                                 <p class="card-text">{{ projects[i]['description'] }}</p>
