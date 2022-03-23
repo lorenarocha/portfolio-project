@@ -136,17 +136,19 @@ section#start a:active {
 
 /* Seção Habilidades */
 .habilities-tools {
-    max-width: 50rem;
+    max-width: 40rem;
     margin: 0 auto;
 }
 .card-habilities{
     background-color: transparent;
     margin-top: 10px;
+    width: 10rem;
 }
 
 .card-body img,
 .card-body svg {
-    width: 150px;
+    width: 100px;
+    margin: 0 auto;
 }
 
 
@@ -178,16 +180,16 @@ section#start a:active {
 }
 
 /* Seção Portfólio */
-.carousel-control-prev,
-.carousel-control-next {
-    display: none;
+.card-portfolio img {
+    width: 100%;
 }
 
 .carousel-indicators {
    margin-bottom: -1.5rem;
 }
 
-.github-link {
+.github-link,
+.cv-link {
     float: right;
 }
 

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, redirect, url_for
+from flask import Flask, render_template, request, flash, redirect, url_for, send_file
 from flask_mail import Mail, Message
 from helpers import get_json, Contato
 import datetime
@@ -42,6 +42,11 @@ def send():
         mail.send(msg)
         flash('Mensagem enviada com sucesso!')
         return redirect(url_for('index'))
+    
+@app.route('/download')
+def download():
+    cv = 'static/Lorena_CV_DataAnalyst.pdf'
+    return send_file(cv, as_attachment=True)
          
 
 if __name__ == '__main__':

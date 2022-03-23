@@ -11,7 +11,7 @@
             "name": "Case técnico para a vaga Data Catalog Analyst na Cornershop by Uber",
             "link": "",
             "description": "A partir de datasets providos pela empresa, foi possível calcular métricas utilizadas na operação do time. Um modelo relacional foi criado e a partir disso, as métricas foram calculadas por queries do SQL e após isso, foi feita a visualização desses indicadores no Tableau e escrita de um Management Report.",
-            "thumb": "static/img/cornershop-test.png"
+            "thumb": "static/img/uber_cornershop_fotoarte.jpg"
         },
         {
             "name": "Análise Exploratória dos shows da Netflix",
