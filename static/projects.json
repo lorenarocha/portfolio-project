@@ -16,7 +16,7 @@
         {
             "name": "Case técnico para a vaga Analista de BI",
             "link": "",
-            "description": "Elaboração de queries em SQL para consulta de duas bases de dados (beneficiários e vendas), além de utilizar Pandas para processo de ETL e também visualização dessas consultas pelo Seaborn.",
+            "description": "Elaboração de queries em SQL para consulta de duas bases de dados (beneficiários e vendas), além de utilizar Pandas para processo de ETL e também visualização dos dados pelo Seaborn.",
             "thumb": "static/img/vidalink.png"
         },
         {
