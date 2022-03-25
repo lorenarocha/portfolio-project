@@ -14,6 +14,12 @@
             "thumb": "static/img/uber_cornershop_fotoarte.jpg"
         },
         {
+            "name": "Case técnico para a vaga Analista de BI",
+            "link": "",
+            "description": "Elaboração de queries em SQL para consulta de duas bases de dados (beneficiários e vendas), além de utilizar Pandas para processo de ETL e também visualização dessas consultas pelo Seaborn.",
+            "thumb": "static/img/vidalink.png"
+        },
+        {
             "name": "Análise Exploratória dos shows da Netflix",
             "link": "https://github.com/lorenarocha/netflix-shows-eda",
             "description": "Com o intuito de aprender técnicas da análise exploratória e também visualização de dados no Python, estudei o catálogo da Netflix, disponibilizado no Kaggle.",
@@ -22,7 +28,7 @@
         {
             "name": "Portfolio Responsivo com Flask e Bootstrap",
             "link": "https://github.com/lorenarocha/portfolio-project",
-            "description": "Projeto realizado em pair programming com Marlene Moraes. Desenvolvi o backend do Portfolio, utilizando o framework Flask, criando várias rotas. (Em andamento)",
+            "description": "Projeto realizado em pair programming com Marlene Moraes. Desenvolvi o backend do Portfolio, utilizando o framework Flask, criando várias rotas.",
             "thumb": "static/img/flask.png"
         },
         {
@@ -30,12 +36,6 @@
             "link": "https://github.com/lorenarocha/crud-letterboxd",
             "description": "Criação de banco de dados de um perfil do Letterboxd no MySQL com o pacote SQLAlchemy, processo de CRUD e visualização dos dados com o framework Streamlit. (Em andamento)",
             "thumb": "static/img/letterboxd-logo.png"
-        },
-        {
-            "name": "Estimativa de precipitação por satélite",
-            "link": "https://github.com/lorenarocha/hidroestimador-unifei",
-            "description": "Elaboração de um produto de Hidroestimador contextualizado para a região de Itajubá. Para a criação do produto, foi utilizado Shell Script, Python, GrADS e CDO.",
-            "thumb": "static/img/hidroestimador.png"
         }
         
     ]
